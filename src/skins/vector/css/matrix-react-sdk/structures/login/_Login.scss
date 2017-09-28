@@ -165,7 +165,7 @@ limitations under the License.
 }
 
 .mx_Login_type_container {
-    display: flex;
+    display: none;
     margin-bottom: 14px;
 }
 
@@ -220,6 +220,7 @@ limitations under the License.
 }
 
 .mx_Login_phoneNumberField {
+    display: none;
     height: 16px;
 }
 
@@ -234,7 +235,7 @@ limitations under the License.
 }
 
 .mx_Login_phoneSection {
-    display:flex;
+    display: none;
 }
 
 .mx_Login_phoneCountry {
@@ -277,4 +278,3 @@ limitations under the License.
   margin-top: 12px;
   margin-bottom: 12px;
 }
-

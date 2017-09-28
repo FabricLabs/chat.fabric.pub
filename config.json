@@ -1,0 +1,15 @@
+{
+    "default_hs_url": "https://matrix.fabric.fm",
+    "default_is_url": "https://vector.im",
+    "brand": "Fabric",
+    "integrations_ui_url": "",
+    "integrations_rest_url": "",
+    "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
+    "enableLabs": true,
+    "roomDirectory": {
+        "servers": [
+            "matrix.fabric.fm"
+        ]
+    },
+    "welcomeUserId": "@snarl:fabric.fm"
+}
