@@ -2,7 +2,7 @@
 <html lang="en" style="height: 100%;">
   <head>
     <meta charset="utf-8">
-    <title>Riot</title>
+    <title>The Fabric Chat</title>
     <link rel="apple-touch-icon" sizes="57x57" href="vector-icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="vector-icons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="vector-icons/apple-touch-icon-72x72.png">
@@ -14,13 +14,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="vector-icons/apple-touch-icon-180x180.png">
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="vector-icons/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="Riot">
-    <meta name="application-name" content="Riot">
+    <meta name="apple-mobile-web-app-title" content="<%= htmlWebpackPlugin.options.vars.brand %>">
+    <meta name="application-name" content="<%= htmlWebpackPlugin.options.vars.brand %>">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="vector-icons/mstile-144x144.png">
     <meta name="msapplication-config" content="vector-icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:image" content="<%= htmlWebpackPlugin.options.vars.og_image_url %>" />
+    <meta property="og:url" content="https://chat.fabric.pub" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Fabric Chat" />
+    <meta property="og:description" content="Community chat for Fabric, the decentralized operating system for the serverless web." />
+    <meta property="og:image" content="https://fabric.pub/assets/truth-is-stronger-than-illusions.jpg" />
     <% for (var i=0; i < htmlWebpackPlugin.files.css.length; i++) {
         var file = htmlWebpackPlugin.files.css[i];
         var match = file.match(/^bundles\/.*?\/theme-(.*)\.css$/);
@@ -35,7 +39,7 @@
   </head>
   <body style="height: 100%;">
     <section id="matrixchat" style="height: 100%;"></section>
-    <noscript>Sorry, Riot requires JavaScript to be enabled.</noscript> <!-- TODO: Translate this? -->
+    <noscript>Sorry, Fabric requires JavaScript to be enabled.</noscript> <!-- TODO: Translate this? -->
     <% for (var i=0; i < htmlWebpackPlugin.files.js.length; i++) {
         // Not a particularly graceful way of not putting the indexeddb worker script
         // into the main page
