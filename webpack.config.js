@@ -3,6 +3,14 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const config = {};
+
+try {
+  config = require('./config');
+} catch (E) {
+  console.warn('No configuration file present.');
+}
+
 let og_image_url = process.env.RIOT_OG_IMAGE_URL;
 if (!og_image_url) og_image_url = 'https://riot.im/app/themes/riot/img/logos/riot-im-logo-1.png';
 
@@ -127,6 +135,8 @@ module.exports = {
             // about moving them.
             inject: false,
             vars: {
+                brand: (config.brand) ? config.brand : 'Riot',
+                og_data: (config.og_data) ? config.og_data : undefined,
                 og_image_url: og_image_url,
             },
         }),

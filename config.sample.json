@@ -30,5 +30,11 @@
     },
     "enable_presence_by_hs_url": {
         "https://matrix.org": false
+    },
+    "og_data": {
+        "url": "https://riot.im",
+        "title": "Riot",
+        "description": "Feature-rich web client for Matrix, an open network for secure, decentralized communication.",
+        "image_url": "https://riot.im/app/themes/riot/img/logos/riot-im-logo-1.png"
     }
 }
