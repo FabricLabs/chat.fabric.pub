@@ -75,7 +75,7 @@ echo -en 'travis_fold:end:matrix-js-sdk\r'
 echo -en 'travis_fold:start:matrix-react-sdk\r'
 echo 'Setting up matrix-react-sdk'
 
-dodep matrix-org matrix-react-sdk
+dodep FabricLabs matrix-react-sdk
 
 # replace the version of js-sdk that got pulled into react-sdk with a symlink
 # to our version. Make sure to do this *after* doing 'npm i' in react-sdk,

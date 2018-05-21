@@ -1,10 +1,10 @@
 {
-  "name": "riot-web",
-  "productName": "Riot",
+  "name": "chat.fabric.pub",
+  "productName": "Grove · the Fabric Chat",
   "main": "src/electron-main.js",
-  "version": "0.15.3",
-  "description": "A feature-rich client for Matrix.org",
-  "author": "Vector Creations Ltd.",
+  "version": "0.1.0-dev",
+  "description": "Community chat for Fabric, the decentralized operating system for the serverless web.",
+  "author": "Fabric Labs",
   "dependencies": {
     "auto-launch": "^5.0.1",
     "electron-window-state": "^4.1.0",

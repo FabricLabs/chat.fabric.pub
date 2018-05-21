@@ -1,13 +1,13 @@
 {
-  "name": "riot-web",
-  "productName": "Riot",
+  "name": "grove",
+  "productName": "Grove · the Fabric Chat",
   "main": "electron_app/src/electron-main.js",
-  "version": "0.15.3",
-  "description": "A feature-rich client for Matrix.org",
-  "author": "New Vector Ltd.",
+  "version": "0.1.0-dev",
+  "description": "The community chat for Fabric.",
+  "author": "Fabric Labs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vector-im/riot-web"
+    "url": "https://github.com/FabricLabs/chat.fabric.pub"
   },
   "license": "Apache-2.0",
   "files": [
@@ -94,6 +94,7 @@
     "cpx": "^1.3.2",
     "cross-env": "^4.0.0",
     "css-raw-loader": "^0.1.1",
+    "electron": "^2.0.1",
     "electron-builder": "^11.2.4",
     "electron-builder-squirrel-windows": "^11.2.1",
     "electron-devtools-installer": "^2.2.0",
