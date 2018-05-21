@@ -1,8 +1,8 @@
 {
   "name": "chat.fabric.pub",
-  "productName": "chat.fabric.pub",
+  "productName": "Grove · the Fabric Chat",
   "main": "src/electron-main.js",
-  "version": "0.1.0-pre",
+  "version": "0.1.0-dev",
   "description": "Community chat for Fabric, the decentralized operating system for the serverless web.",
   "author": "Fabric Labs",
   "dependencies": {
