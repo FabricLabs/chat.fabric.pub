@@ -139,7 +139,7 @@
     "olm": "https://matrix.org/packages/npm/olm/olm-2.2.1.tgz"
   },
   "build": {
-    "appId": "im.riot.app",
+    "appId": "pub.fabric.chat",
     "category": "Network",
     "electronVersion": "1.8.4",
     "//asar=false": "https://github.com/electron-userland/electron-builder/issues/675",
@@ -157,7 +157,7 @@
     "linux": {
       "target": "deb",
       "category": "Network;InstantMessaging;Chat",
-      "maintainer": "support@riot.im",
+      "maintainer": "labs@fabric.pub",
       "desktop": {
         "StartupWMClass": "riot"
       }
