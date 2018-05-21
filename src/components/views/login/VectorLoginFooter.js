@@ -33,10 +33,10 @@ module.exports = React.createClass({
         
         return (
             <div className="mx_Login_links">
-                <a href="https://medium.com/@RiotChat">blog</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-                <a href="https://twitter.com/@RiotChat">twitter</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-                <a href="https://github.com/vector-im/riot-web">github</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-                <a href="https://matrix.org">{ _t('powered by Matrix') }</a>
+                <a href="https://medium.com/universes">/universes</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <a href="https://twitter.com/@FabricProtocol">@FabricProtocol</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <a href="https://github.com/FabricLabs/chat.fabric.pub"><code>git:\/\/</code></a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <a href="https://fabric.pub">Home</a>
             </div>
         );
     }
