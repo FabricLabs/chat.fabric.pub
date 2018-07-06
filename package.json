@@ -96,7 +96,6 @@
     "css-raw-loader": "^0.1.1",
     "electron": "^2.0.1",
     "electron-builder": "^11.2.4",
-    "electron-builder-squirrel-windows": "^11.2.1",
     "electron-devtools-installer": "^2.2.0",
     "emojione": "^2.2.7",
     "eslint": "^3.14.0",
@@ -163,11 +162,11 @@
       "category": "Network;InstantMessaging;Chat",
       "maintainer": "labs@fabric.pub",
       "desktop": {
-        "StartupWMClass": "riot"
+        "StartupWMClass": "grove"
       }
     },
     "win": {
-      "target": "squirrel"
+      "target": "nsis"
     },
     "directories": {
       "buildResources": "electron_app/build",
