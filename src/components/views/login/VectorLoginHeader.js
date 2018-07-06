@@ -33,10 +33,16 @@ module.exports = React.createClass({
 
     render: function() {
         return (
+<<<<<<< HEAD
             <div className="mx_Login_header">
                 <div className="mx_Login_logo">
                     <img src={this.props.icon || DEFAULT_LOGO_URI} alt="Riot"/>
                 </div>
+=======
+            <div className="mx_Login_logo">
+                <h1>Welcome to Fabric.</h1>
+                <h2>Let's take back the web.</h2>
+>>>>>>> 7041f8e4881784dcfb731dc6c03757b28d2d3419
             </div>
         );
     }
