@@ -1,5 +1,5 @@
 {
-    "default_hs_url": "https://matrix.fabric.fm",
+    "default_hs_url": "https://matrix.fabric.pub",
     "default_is_url": "https://vector.im",
     "brand": "Fabric",
     "integrations_ui_url": "",
@@ -8,8 +8,7 @@
     "enableLabs": true,
     "roomDirectory": {
         "servers": [
-            "matrix.fabric.fm"
+            "matrix.fabric.pub"
         ]
-    },
-    "welcomeUserId": "@snarl:fabric.fm"
+    }
 }
