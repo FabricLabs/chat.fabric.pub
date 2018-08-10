@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/FabricLabs/chat.fabric.pub"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "files": [
     "AUTHORS.rst",
     "CONTRIBUTING.rst",
@@ -64,13 +64,13 @@
     "gemini-scrollbar": "matrix-org/gemini-scrollbar#b302279",
     "gfm.css": "^1.1.1",
     "highlight.js": "^9.0.0",
-    "matrix-js-sdk": "0.10.5",
+    "matrix-js-sdk": "0.10.7",
     "matrix-react-sdk": "github:martindale/matrix-react-sdk#fabric",
     "modernizr": "^3.1.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
-    "sanitize-html": "^1.11.1",
+    "sanitize-html": "^1.18.4",
     "ua-parser-js": "^0.7.10",
     "url": "^0.11.0"
   },
@@ -143,7 +143,7 @@
   },
   "build": {
     "appId": "pub.fabric.chat",
-    "electronVersion": "2.0.2",
+    "electronVersion": "2.0.5",
     "asar": false,
     "files": [
       "node_modules/**",
