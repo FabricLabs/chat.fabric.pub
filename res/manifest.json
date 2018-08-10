@@ -1,6 +1,6 @@
 {
-    "name": "Riot - open team collaboration",
-    "short_name": "Riot",
+    "name": "Grove · the community Fabric",
+    "short_name": "Grove",
     "display": "standalone",
     "theme_color": "#76CFA6",
     "start_url": "index.html",
@@ -45,8 +45,8 @@
     "related_applications": [
         {
             "platform": "play",
-            "url": "https://play.google.com/store/apps/details?id=im.vector.alpha",
-            "id": "im.vector.alpha"
+            "url": "https://play.google.com/store/apps/details?id=pub.fabric.grove",
+            "id": "pub.fabric.grove"
         },
         {
             "platform": "itunes",
