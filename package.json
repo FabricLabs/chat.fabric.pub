@@ -1,6 +1,6 @@
 {
   "name": "grove",
-  "productName": "Grove · the Fabric Chat",
+  "productName": "Grove (the Fabric Chat)",
   "main": "electron_app/src/electron-main.js",
   "version": "0.1.0-dev",
   "description": "The community chat for Fabric.",

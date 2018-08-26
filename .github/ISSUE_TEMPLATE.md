@@ -1,4 +1,4 @@
-<!-- Please report security issues by email to security@matrix.org -->
+<!-- Please report security issues by email to security@fabric.pub -->
 
 <!-- This is a bug report template. By following the instructions below and
 filling out the sections with your information, you will help the us to get all
@@ -22,7 +22,7 @@ Describe here the problem that you are experiencing, or the feature you are requ
 
 Describe how what happens differs from what you expected.
 
-Log: sent/not sent?    <!-- You can send us the app's logs via the 'Report bug'
+**Log**: sent/not sent?    <!-- You can send us the app's logs via the 'Report bug'
 link on the 'Settings' page. Very important for hard-to-reproduce bugs. Please
 file a bug here too! -->
 
@@ -38,7 +38,7 @@ For the web app:
 
 - **Browser**: Chrome, Safari, Firefox? which version?
 - **OS**: Windows, macOS, Ubuntu, Arch Linux, etc?
-- **URL**: riot.im/develop / riot.im/app / somewhere else? If a private server, what version of riot-web?
+- **URL**: [`chat.fabric.pub`](https://chat.fabric.pub) / [`chat.verse.im`](https://chat.verse.im) / somewhere else? If a private server, what version of `grove`?
 
 For the desktop app:
 

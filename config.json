@@ -1,10 +1,11 @@
 {
     "default_hs_url": "https://fabric.pub",
     "default_is_url": "https://vector.im",
+    "default_theme": "dark",
     "brand": "Fabric",
     "integrations_ui_url": "",
     "integrations_rest_url": "",
-    "bug_report_endpoint_url": "https://riot.im/bugreports/submit",
+    "bug_report_endpoint_url": "https://chat.fabric.pub/bugs",
     "enableLabs": true,
     "roomDirectory": {
         "servers": [
