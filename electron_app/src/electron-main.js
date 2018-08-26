@@ -119,7 +119,7 @@ if (shouldQuit) {
 
 
 const launcher = new AutoLaunch({
-    name: vectorConfig.brand || 'Riot',
+    name: vectorConfig.brand || 'Grove',
     isHidden: true,
     mac: {
         useLaunchAgent: true,
@@ -183,7 +183,7 @@ app.on('ready', () => {
         console.log('No update_base_url is defined: auto update is disabled');
     }
 
-    const iconPath = `${__dirname}/../img/riot.${process.platform === 'win32' ? 'ico' : 'png'}`;
+    const iconPath = `${__dirname}/../img/grove.${process.platform === 'win32' ? 'ico' : 'png'}`;
 
     // Load the previous window state with fallback to defaults
     const mainWindowState = windowStateKeeper({
@@ -211,7 +211,7 @@ app.on('ready', () => {
     // Create trayIcon icon
     tray.create({
         icon_path: iconPath,
-        brand: vectorConfig.brand || 'Riot',
+        brand: vectorConfig.brand || 'Grove',
     });
 
     mainWindow.once('ready-to-show', () => {

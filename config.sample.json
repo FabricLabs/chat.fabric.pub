@@ -1,5 +1,5 @@
 {
-    "default_hs_url": "https://matrix.org",
+    "default_hs_url": "https://fabric.pub",
     "default_is_url": "https://vector.im",
     "disable_custom_urls": false,
     "disable_guests": false,
