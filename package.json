@@ -1,13 +1,13 @@
 {
-  "name": "@fabric/grove",
-  "productName": "Grove (the Fabric Chat)",
+  "name": "@fabric/verse",
+  "productName": "Verse",
   "main": "electron_app/src/electron-main.js",
   "version": "0.1.0-RC1",
-  "description": "Cross-platform community chat.",
+  "description": "virtual universe simulator",
   "author": "Fabric Labs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FabricLabs/chat.fabric.pub"
+    "url": "https://github.com/FabricLabs/chat.verse.im"
   },
   "license": "MIT",
   "files": [
@@ -144,9 +144,9 @@
     "olm": "https://matrix.org/packages/npm/olm/olm-2.2.1.tgz"
   },
   "build": {
-    "appId": "pub.fabric.chat",
+    "appId": "im.verse.chat",
+    "category": "Network",
     "electronVersion": "2.0.7",
-    "asar": false,
     "files": [
       "node_modules/**",
       "src/**",
@@ -169,7 +169,7 @@
       "category": "Network;InstantMessaging;Chat",
       "maintainer": "labs@fabric.pub",
       "desktop": {
-        "StartupWMClass": "grove"
+        "StartupWMClass": "verse"
       }
     },
     "win": {
