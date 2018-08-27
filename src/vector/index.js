@@ -74,7 +74,7 @@ var lastLocationHashSet = null;
 var CallHandler = require("matrix-react-sdk/lib/CallHandler");
 CallHandler.setConferenceHandler(VectorConferenceHandler);
 
-MatrixClientPeg.setIndexedDbWorkerScript(window.vector_indexeddb_worker_script);
+MatrixClientPeg.setIndexedDbWorkerScript(window.verse_indexeddb_worker_script);
 
 function checkBrowserFeatures(featureList) {
     if (!window.Modernizr) {
@@ -262,25 +262,13 @@ async function loadApp() {
 
     if (!preventRedirect) {
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-            // TODO: check with @munprix re: OSX builds, then begin iOS builds
+            // TODO: compile for iOS
             return;
-            if (confirm(_t("Riot is not supported on mobile web. Install the app?"))) {
-                // TODO: Apple Store publish?
-                window.location = "https://itunes.apple.com/us/app/vector.im/id1083446067";
-                return;
-            }
         }
         else if (/Android/.test(navigator.userAgent)) {
-            // FIXME: ugly status hardcoding
-            if (SettingsStore.getValue("theme") === 'status') {
-                window.location = "https://status.im/join-riot.html";
+            if (confirm(_t("Riot is not supported on mobile web. Install the app?"))) {
+                window.location = "https://play.google.com/store/apps/details?id=im.verse.chat";
                 return;
-            }
-            else {
-                if (confirm(_t("Riot is not supported on mobile web. Install the app?"))) {
-                    window.location = "https://play.google.com/store/apps/details?id=im.vector.alpha";
-                    return;
-                }
             }
         }
     }
