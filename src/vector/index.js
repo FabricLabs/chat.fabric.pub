@@ -34,7 +34,7 @@ rageshake.init().then(() => {
 });
 
 window.addEventListener('beforeunload', (e) => {
-    console.log('riot-web closing');
+    console.log('grove-web closing');
     // try to flush the logs to indexeddb
     rageshake.flush();
 });
@@ -154,7 +154,7 @@ var onNewScreen = function(screen) {
 var makeRegistrationUrl = function(params) {
     let url;
     if (window.location.protocol === "file:") {
-        url = 'https://riot.im/app/#/register';
+        url = 'https://chat.fabric.pub/#/register';
     } else {
         url = (
             window.location.protocol + '//' +
@@ -262,16 +262,12 @@ async function loadApp() {
 
     if (!preventRedirect) {
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-            // FIXME: ugly status hardcoding
-            if (SettingsStore.getValue("theme") === 'status') {
-                window.location = "https://status.im/join-riot.html";
+            // TODO: check with @munprix re: OSX builds, then begin iOS builds
+            return;
+            if (confirm(_t("Riot is not supported on mobile web. Install the app?"))) {
+                // TODO: Apple Store publish?
+                window.location = "https://itunes.apple.com/us/app/vector.im/id1083446067";
                 return;
-            }
-            else {
-                if (confirm(_t("Riot is not supported on mobile web. Install the app?"))) {
-                    window.location = "https://itunes.apple.com/us/app/vector.im/id1083446067";
-                    return;
-                }
             }
         }
         else if (/Android/.test(navigator.userAgent)) {

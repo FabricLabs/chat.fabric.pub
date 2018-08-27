@@ -1,15 +1,15 @@
 {
-  "name": "riot-web",
-  "productName": "Riot",
+  "name": "@fabric/grove",
+  "productName": "Grove (the Fabric Chat)",
   "main": "electron_app/src/electron-main.js",
-  "version": "0.15.7",
-  "description": "A feature-rich client for Matrix.org",
-  "author": "New Vector Ltd.",
+  "version": "0.1.0-RC1",
+  "description": "Cross-platform community chat.",
+  "author": "Fabric Labs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vector-im/riot-web"
+    "url": "https://github.com/FabricLabs/chat.fabric.pub"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "files": [
     "AUTHORS.rst",
     "CONTRIBUTING.rst",
@@ -30,12 +30,13 @@
     "reskindex:watch": "reskindex -h src/header -w",
     "i18n": "matrix-gen-i18n",
     "prunei18n": "matrix-prune-i18n",
+    "build:all": "npm run build && npm run build:electron",
     "build:res": "node scripts/copy-res.js",
     "build:modernizr": "modernizr -c .modernizr.json -d src/vector/modernizr.js",
     "build:compile": "npm run reskindex && babel --source-maps -d lib src",
     "build:bundle": "cross-env NODE_ENV=production webpack -p --progress --bail",
     "build:bundle:dev": "webpack --optimize-occurence-order --progress --bail",
-    "build:electron": "npm run clean && npm run build && npm run install:electron && build -wml --ia32 --x64",
+    "build:electron": "npm run clean && npm run build && npm run install:electron && build -l --ia32 --x64",
     "build": "npm run reskindex && npm run build:res && npm run build:bundle",
     "build:dev": "npm run reskindex && npm run build:res && npm run build:bundle:dev",
     "dist": "scripts/package.sh",
@@ -64,13 +65,13 @@
     "gemini-scrollbar": "matrix-org/gemini-scrollbar#b302279",
     "gfm.css": "^1.1.1",
     "highlight.js": "^9.0.0",
-    "matrix-js-sdk": "0.10.6",
-    "matrix-react-sdk": "0.12.9",
+    "matrix-js-sdk": "0.10.8",
+    "matrix-react-sdk": "FabricLabs/matrix-react-sdk#grove-updates",
     "modernizr": "^3.1.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
-    "sanitize-html": "^1.11.1",
+    "sanitize-html": "^1.18.4",
     "ua-parser-js": "^0.7.10",
     "url": "^0.11.0"
   },
@@ -94,8 +95,8 @@
     "cpx": "^1.3.2",
     "cross-env": "^4.0.0",
     "css-raw-loader": "^0.1.1",
-    "electron-builder": "^11.2.4",
-    "electron-builder-squirrel-windows": "^11.2.1",
+    "electron": "^2.0.1",
+    "electron-builder": "^20.19.2",
     "electron-devtools-installer": "^2.2.0",
     "emojione": "^2.2.7",
     "eslint": "^3.14.0",
@@ -106,6 +107,7 @@
     "expect": "^1.16.0",
     "fs-extra": "^0.30.0",
     "html-webpack-plugin": "^2.24.0",
+    "hub": "^6.1.2",
     "json-loader": "^0.5.3",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^0.2.3",
@@ -142,13 +144,9 @@
     "olm": "https://matrix.org/packages/npm/olm/olm-2.2.1.tgz"
   },
   "build": {
-    "appId": "im.riot.app",
-    "category": "Network",
-    "electronVersion": "2.0.4",
-    "//asar=false": "https://github.com/electron-userland/electron-builder/issues/675",
+    "appId": "pub.fabric.chat",
+    "electronVersion": "2.0.7",
     "asar": false,
-    "dereference": true,
-    "//files": "We bundle everything, so we only need to include webapp/",
     "files": [
       "node_modules/**",
       "src/**",
@@ -158,15 +156,24 @@
       "webapp/**/*"
     ],
     "linux": {
-      "target": "deb",
+      "target": [
+        {
+          "target": "deb",
+          "arch": "x64"
+        },
+        {
+          "target": "rpm",
+          "arch": "x64"
+        }
+      ],
       "category": "Network;InstantMessaging;Chat",
-      "maintainer": "support@riot.im",
+      "maintainer": "labs@fabric.pub",
       "desktop": {
-        "StartupWMClass": "riot"
+        "StartupWMClass": "grove"
       }
     },
     "win": {
-      "target": "squirrel"
+      "target": "nsis"
     },
     "directories": {
       "buildResources": "electron_app/build",

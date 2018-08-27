@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let og_image_url = process.env.RIOT_OG_IMAGE_URL;
-if (!og_image_url) og_image_url = 'https://riot.im/app/themes/riot/img/logos/riot-im-logo-1.png';
+if (!og_image_url) og_image_url = 'https://chat.fabric.pub/images/grove-thumbnail.png';
 
 module.exports = {
     entry: {
@@ -26,6 +26,7 @@ module.exports = {
         "theme-light":  "./node_modules/matrix-react-sdk/res/themes/light/css/light.scss",
         "theme-dark":   "./node_modules/matrix-react-sdk/res/themes/dark/css/dark.scss",
         "theme-status": "./res/themes/status/css/status.scss",
+        "theme-blueshine": "./res/themes/blueshine/css/blueshine.scss",
     },
     module: {
         preLoaders: [
