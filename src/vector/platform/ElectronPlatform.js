@@ -28,7 +28,7 @@ remote.autoUpdater.on('update-downloaded', onUpdateDownloaded);
 
 // try to flush the rageshake logs to indexeddb before quit.
 ipcRenderer.on('before-quit', function () {
-    console.log('riot-desktop closing');
+    console.log('grove-desktop closing');
     rageshake.flush();
 });
 
