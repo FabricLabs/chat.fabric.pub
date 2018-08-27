@@ -262,20 +262,13 @@ async function loadApp() {
 
     if (!preventRedirect) {
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-          // TODO: compile for iOS
-          return;
+            // TODO: compile for iOS
+            return;
         }
         else if (/Android/.test(navigator.userAgent)) {
-            // FIXME: ugly status hardcoding
-            if (SettingsStore.getValue("theme") === 'status') {
-                window.location = "https://status.im/join-riot.html";
+            if (confirm(_t("Riot is not supported on mobile web. Install the app?"))) {
+                window.location = "https://play.google.com/store/apps/details?id=im.verse.chat";
                 return;
-            }
-            else {
-                if (confirm(_t("Riot is not supported on mobile web. Install the app?"))) {
-                    window.location = "https://play.google.com/store/apps/details?id=im.vector.alpha";
-                    return;
-                }
             }
         }
     }
