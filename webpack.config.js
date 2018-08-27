@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 let og_image_url = process.env.RIOT_OG_IMAGE_URL;
-if (!og_image_url) og_image_url = 'https://chat.fabric.pub/images/verse-thumbnail.png';
+if (!og_image_url) og_image_url = 'https://chat.fabric.pub/images/grove-thumbnail.png';
 
 module.exports = {
     entry: {
