@@ -2,14 +2,14 @@
     "default_hs_url": "https://verse.im",
     "default_is_url": "https://vector.im",
     "default_theme": "dark",
-    "brand": "Fabric",
+    "brand": "Verse",
     "integrations_ui_url": "",
     "integrations_rest_url": "",
-    "bug_report_endpoint_url": "https://chat.fabric.pub/bugs",
+    "bug_report_endpoint_url": "https://chat.verse.im/bugs",
     "enableLabs": true,
     "roomDirectory": {
         "servers": [
-            "fabric.pub"
+            "verse.im"
         ]
     }
 }
