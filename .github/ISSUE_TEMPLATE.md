@@ -1,4 +1,4 @@
-<!-- Please report security issues by email to security@verse.im -->
+<!-- Please report security issues by email to security@fabric.pub -->
 
 <!-- This is a bug report template. By following the instructions below and
 filling out the sections with your information, you will help the us to get all
