@@ -1,0 +1,16 @@
+{
+  "brand": "Verse",
+  "default_theme": "blueshine",
+  "default_hs_url": "https://verse.im",
+  "default_is_url": "https://vector.im",
+  "integrations_ui_url": "",
+  "integrations_rest_url": "",
+  "bug_report_endpoint_url": "https://chat.verse.im/bugs",
+  "update_base_url": "https://chat.verse.im/releases",
+  "enableLabs": true,
+  "roomDirectory": {
+    "servers": [
+      "verse.im"
+    ]
+  }
+}
