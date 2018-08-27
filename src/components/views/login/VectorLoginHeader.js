@@ -20,7 +20,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const i = [1, 2, 3, 4, 5][Math.floor(Math.random() * 5)];
-const DEFAULT_LOGO_URI = "home/images/fabric.png";
+const DEFAULT_LOGO_URI = "/images/fabric.png";
 
 module.exports = React.createClass({
     displayName: 'VectorLoginHeader',
@@ -33,11 +33,7 @@ module.exports = React.createClass({
 
     render: function() {
         return (
-            <div className="mx_Login_header">
-                <div className="mx_Login_logo">
-                    <img src={this.props.icon || DEFAULT_LOGO_URI} alt="Grove"/>
-                </div>
-            </div>
+          <div></div>
         );
     }
 });
