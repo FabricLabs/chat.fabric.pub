@@ -53,6 +53,7 @@ const COPY_LIST = [
     ["res/home-status.html", "webapp"],
     ["res/home/**", "webapp/home"],
     ["res/vector-icons/**", "webapp/vector-icons"],
+    ["res/verse-icons/**", "webapp/verse-icons"],
     ["node_modules/matrix-react-sdk/res/{fonts,img,themes,media}/**", "webapp"],
     ["res/themes/**", "webapp/themes"],
     ["node_modules/emojione/assets/svg/*", "webapp/emojione/svg/"],

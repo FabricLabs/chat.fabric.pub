@@ -1,9 +1,9 @@
 {
-  "name": "grove",
+  "name": "@fabric/grove",
   "productName": "Grove (the Fabric Chat)",
   "main": "electron_app/src/electron-main.js",
-  "version": "0.1.0-dev",
-  "description": "The community chat for Fabric.",
+  "version": "0.1.0-RC1",
+  "description": "Where the community gathers",
   "author": "Fabric Labs",
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
     "build:compile": "npm run reskindex && babel --source-maps -d lib src",
     "build:bundle": "cross-env NODE_ENV=production webpack -p --progress --bail",
     "build:bundle:dev": "webpack --optimize-occurence-order --progress --bail",
-    "build:electron": "npm run clean && npm run build && npm run install:electron && build -wml --ia32 --x64",
+    "build:electron": "npm run clean && npm run build && npm run install:electron && build -l --ia32 --x64",
     "build": "npm run reskindex && npm run build:res && npm run build:bundle",
     "build:dev": "npm run reskindex && npm run build:res && npm run build:bundle:dev",
     "dist": "scripts/package.sh",

@@ -2,7 +2,7 @@
   "name": "Grove",
   "productName": "Grove",
   "main": "src/electron-main.js",
-  "version": "0.1.1-dev",
+  "version": "0.1.0",
   "description": "Community chat for Fabric, the decentralized operating system for the serverless web.",
   "author": "Fabric Labs",
   "dependencies": {
