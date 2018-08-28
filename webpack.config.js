@@ -3,8 +3,8 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-let og_image_url = process.env.RIOT_OG_IMAGE_URL;
-if (!og_image_url) og_image_url = 'https://chat.fabric.pub/images/grove-thumbnail.png';
+let og_image_url = process.env.VERSE_OG_IMAGE_URL;
+if (!og_image_url) og_image_url = 'https://chat.verse.im/images/verse-thumbnail.png';
 
 module.exports = {
     entry: {
