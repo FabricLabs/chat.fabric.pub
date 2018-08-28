@@ -2,29 +2,29 @@
 <html lang="en" style="height: 100%;">
   <head>
     <meta charset="utf-8">
-    <title>Grove &middot; where the community gathers</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="grove-icons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="grove-icons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="grove-icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="grove-icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="grove-icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="grove-icons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="grove-icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="grove-icons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="grove-icons/apple-touch-icon-180x180.png">
+    <title>Verse &middot; the virtual universe simulator</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="verse-icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="verse-icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="verse-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="verse-icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="verse-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="verse-icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="verse-icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="verse-icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="verse-icons/apple-touch-icon-180x180.png">
     <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" href="grove-icons/favicon.ico">
+    <link rel="shortcut icon" href="verse-icons/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="<%= htmlWebpackPlugin.options.vars.brand %>">
     <meta name="application-name" content="<%= htmlWebpackPlugin.options.vars.brand %>">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="grove-icons/mstile-144x144.png">
-    <meta name="msapplication-config" content="grove-icons/browserconfig.xml">
+    <meta name="msapplication-TileImage" content="verse-icons/mstile-144x144.png">
+    <meta name="msapplication-config" content="verse-icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:url" content="https://chat.fabric.pub" />
+    <meta property="og:url" content="https://chat.verse.im" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Grove (the Fabric Chat)" />
-    <meta property="og:description" content="Chat with the Fabric community using Grove, a cross-platform messaging app." />
-    <meta property="og:image" content="https://chat.fabric.pub/images/grove-thumbnail.png" />
+    <meta property="og:title" content="Verse &bull; the virtual universe simulator" />
+    <meta property="og:description" content="Verse is a serverless game engine running on Fabric, the peer-to-peer supercomputer." />
+    <meta property="og:image" content="https://chat.fabric.pub/verse-icons/apple-touch-icon-180x180.png" />
     <% for (var i=0; i < htmlWebpackPlugin.files.css.length; i++) {
         var file = htmlWebpackPlugin.files.css[i];
         var match = file.match(/^bundles\/.*?\/theme-(.*)\.css$/);
@@ -38,15 +38,15 @@
     } %>
   </head>
   <body style="height: 100%;">
-    <section id="matrixchat" style="height: 100%;"></section>
     <noscript>Sorry, Fabric requires JavaScript to be enabled.</noscript> <!-- TODO: Translate this? -->
+    <section id="matrixchat" style="height: 100%;"></section>
     <% for (var i=0; i < htmlWebpackPlugin.files.js.length; i++) {
         // Not a particularly graceful way of not putting the indexeddb worker script
         // into the main page
         if (_.endsWith(htmlWebpackPlugin.files.js[i], 'indexeddb-worker.js')) {
             %>
             <script>
-                window.vector_indexeddb_worker_script = '<%= htmlWebpackPlugin.files.js[i] %>';
+                window.verse_indexeddb_worker_script = '<%= htmlWebpackPlugin.files.js[i] %>';
             </script>
             <%
             continue;
