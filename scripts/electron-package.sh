@@ -63,7 +63,7 @@ fi
 
 if [ ! -f package.json ]; then
     echo "No package.json found. This script must be run from"
-    echo "the riot-web directory."
+    echo "the chat.fabric.pub directory."
     exit
 fi
 
