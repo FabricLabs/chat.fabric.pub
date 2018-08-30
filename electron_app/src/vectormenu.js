@@ -57,7 +57,7 @@ const template = [
         role: 'help',
         submenu: [
             {
-                label: 'fabric.pub',
+                label: 'About Fabric',
                 click() { shell.openExternal('https://fabric.pub'); },
             },
         ],

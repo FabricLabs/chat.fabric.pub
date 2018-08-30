@@ -2,7 +2,7 @@
   "name": "@fabric/grove",
   "productName": "Grove (the Fabric Chat)",
   "main": "electron_app/src/electron-main.js",
-  "version": "0.1.0-RC1",
+  "version": "0.1.0-RC2",
   "description": "Cross-platform community chat.",
   "author": "Fabric Labs",
   "repository": {
