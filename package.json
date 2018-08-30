@@ -69,7 +69,7 @@
     "gfm.css": "^1.1.1",
     "highlight.js": "^9.0.0",
     "matrix-js-sdk": "0.10.8",
-    "matrix-react-sdk": "FabricLabs/matrix-react-sdk#grove-updates",
+    "matrix-react-sdk": "FabricLabs/matrix-react-sdk#verse-updates",
     "modernizr": "^3.1.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.0",
@@ -170,7 +170,7 @@
       "category": "Network;InstantMessaging;Chat",
       "maintainer": "labs@fabric.pub",
       "desktop": {
-        "StartupWMClass": "grove"
+        "StartupWMClass": "verse"
       }
     },
     "win": {

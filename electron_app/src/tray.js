@@ -81,7 +81,7 @@ exports.create = function(config) {
         // Windows likes ico's too much.
         if (process.platform === 'win32') {
             try {
-                const icoPath = path.join(app.getPath('temp'), 'win32_grove_icon.ico');
+                const icoPath = path.join(app.getPath('temp'), 'win32_verse_icon.ico');
                 fs.writeFileSync(icoPath, await pngToIco(newFavicon.toPNG()));
                 newFavicon = nativeImage.createFromPath(icoPath);
             } catch (e) {

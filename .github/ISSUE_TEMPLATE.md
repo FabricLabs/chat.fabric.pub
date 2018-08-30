@@ -38,7 +38,7 @@ For the web app:
 
 - **Browser**: Chrome, Safari, Firefox? which version?
 - **OS**: Windows, macOS, Ubuntu, Arch Linux, etc?
-- **URL**: [`chat.fabric.pub`](https://chat.fabric.pub) / [`chat.verse.im`](https://chat.verse.im) / somewhere else? If a private server, what version of `grove`?
+- **URL**: [`chat.fabric.pub`](https://chat.fabric.pub) / [`chat.verse.im`](https://chat.verse.im) / somewhere else? If a private server, what version of `verse`?
 
 For the desktop app:
 
