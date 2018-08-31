@@ -8,6 +8,10 @@
   "bug_report_endpoint_url": "https://chat.fabric.pub/bugs",
   "update_base_url": "https://chat.fabric.pub/releases",
   "enableLabs": true,
+  "disable_3pid_login": true,
+  "disable_login_language_selector": true,
+  "disable_guests": true,
+  "disable_custom_urls": true,
   "roomDirectory": {
     "servers": [
       "fabric.pub"
