@@ -56,6 +56,7 @@ const COPY_LIST = [
     ["res/vector-icons/**", "webapp/vector-icons"],
     ["res/verse-icons/**", "webapp/verse-icons"],
     ["res/images/**", "webapp/images"],
+    ["res/releases/**", "webapp/releases"],
     ["node_modules/matrix-react-sdk/res/{fonts,img,themes,media}/**", "webapp"],
     ["res/themes/**", "webapp/themes"],
     ["node_modules/emojione/assets/svg/*", "webapp/emojione/svg/"],
