@@ -32,12 +32,7 @@ module.exports = React.createClass({
         if (SettingsStore.getValue("theme") === 'status') return <div/>;
         
         return (
-            <div className="mx_Login_links">
-                <a href="https://github.com/FabricLabs/chat.fabric.pub"><code>git://</code></a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-                <a href="https://twitter.com/@FabricProtocol">@FabricProtocol</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-                <a href="https://medium.com/universes">/universes</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
-                <a href="https://fabric.pub">Home</a>
-            </div>
+            <div></div>
         );
     }
 });
