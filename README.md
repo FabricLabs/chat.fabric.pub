@@ -8,8 +8,7 @@ an offline-first protocol for building decentralized applications.
 ## Getting Started
 
 1. `npm install`
-2. `./scripts/fetch-develop.deps.sh`
-3. `npm run build`
+2. `npm run build`
 
 See `webapp` for the compiled application.  Have fun!
 

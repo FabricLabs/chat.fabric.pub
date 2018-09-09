@@ -68,7 +68,7 @@
     "gemini-scrollbar": "matrix-org/gemini-scrollbar#b302279",
     "gfm.css": "^1.1.1",
     "highlight.js": "^9.0.0",
-    "matrix-js-sdk": "0.10.9",
+    "matrix-js-sdk": "FabricLabs/matrix-js-sdk#chat.fabric.pub",
     "matrix-react-sdk": "FabricLabs/matrix-react-sdk#chat.fabric.pub",
     "modernizr": "^3.1.0",
     "prop-types": "^15.5.10",
