@@ -33,10 +33,12 @@
     "Dev chat for the Grove/Web dev team": "Dev chat for the Grove/Web dev team",
     "Dev chat for the Dendrite dev team": "Dev chat for the Dendrite dev team",
     "Lots of rooms already exist in Matrix, linked to existing networks (Slack, IRC, Gitter etc) or independent. Check out the directory!": "Lots of rooms already exist in Matrix, linked to existing networks (Slack, IRC, Gitter etc) or independent. Check out the directory!",
-    "Riot/Android &amp; matrix-android-sdk chat": "Grove/Android &amp; matrix-android-sdk chat",
+    "Riot/Android &amp; matrix-android-sdk chat": "Riot/Android &amp; matrix-android-sdk chat",
     "Riot/Web &amp; Desktop chat": "Grove/Android &amp; matrix-android-sdk chat",
     "Riot/iOS &amp; matrix-ios-sdk chat": "Grove/Android &amp; matrix-android-sdk chat",
     "Grove/Android &amp; matrix-android-sdk chat": "Grove/Android &amp; matrix-android-sdk chat",
     "Grove/Web &amp; Desktop chat": "Grove/Web &amp; Desktop chat",
-    "Grove/iOS &amp; matrix-ios-sdk chat": "Grove/iOS &amp; matrix-ios-sdk chat"
+    "Grove/iOS &amp; matrix-ios-sdk chat": "Grove/iOS &amp; matrix-ios-sdk chat",
+    "You can use the custom server options to sign into other Matrix servers by specifying a different Home server URL.<br/>This allows you to use Riot with an existing Matrix account on a different home server.<br/><br/>You can also set a custom identity server but you won't be able to invite users by email address, or be invited by email address yourself.": "You can use the custom server options to sign into other Matrix servers by specifying a different Home server URL.<br/>This allows you to use Grove with an existing Matrix account on a different home server.<br/><br/>You can also set a custom identity server but you won't be able to invite users by email address, or be invited by email address yourself.",
+    "Co-ordination for Riot translators": "Co-ordination for Grove translators"
 }
