@@ -5,7 +5,7 @@
     "powered by Matrix": "powered by Matrix",
     "Riot Desktop on %(platformName)s": "Verse Desktop on %(platformName)s",
     "Grove Desktop on %(platformName)s": "Verse Desktop on %(platformName)s",
-    "Grove is not supported on mobile web. Install the app?": "Verse is not supported on mobile web. Install the app?",
+    "Grove is not supported on mobile web. Install the app?": "Verse is not supported on the mobile web. Install the app?",
     "Unknown device": "Unknown device",
     "You need to be using HTTPS to place a screen-sharing call.": "You need to be using HTTPS to place a screen-sharing call.",
     "Welcome to Grove": "Welcome to Verse",
@@ -29,10 +29,16 @@
     "Discussion of the Identity Service API": "Discussion of the Identity Service API",
     "Support for those using, running and writing other bridges": "Support for those using, running and writing other bridges",
     "Contributing code to Matrix and Grove": "Contributing code to RPG and Verse",
+    "Dev chat for the Riot/Web dev team": "Dev chat for the Verse/Web dev team",
     "Dev chat for the Grove/Web dev team": "Dev chat for the Verse/Web dev team",
     "Dev chat for the Dendrite dev team": "Dev chat for the Dendrite dev team",
     "Lots of rooms already exist in Matrix, linked to existing networks (Slack, IRC, Gitter etc) or independent. Check out the directory!": "Lots of rooms already exist in Matrix, linked to existing networks (Slack, IRC, Gitter etc) or independent. Check out the directory!",
+    "Riot/Android &amp; matrix-android-sdk chat": "Riot/Android &amp; matrix-android-sdk chat",
+    "Riot/Web &amp; Desktop chat": "Verse/Android &amp; matrix-android-sdk chat",
+    "Riot/iOS &amp; matrix-ios-sdk chat": "Verse/Android &amp; matrix-android-sdk chat",
     "Grove/Android &amp; matrix-android-sdk chat": "Verse/Android &amp; matrix-android-sdk chat",
     "Grove/Web &amp; Desktop chat": "Verse/Web &amp; Desktop chat",
-    "Grove/iOS &amp; matrix-ios-sdk chat": "Verse/iOS &amp; matrix-ios-sdk chat"
+    "Grove/iOS &amp; matrix-ios-sdk chat": "Verse/iOS &amp; matrix-ios-sdk chat",
+    "You can use the custom server options to sign into other Matrix servers by specifying a different Home server URL.<br/>This allows you to use Riot with an existing Matrix account on a different home server.<br/><br/>You can also set a custom identity server but you won't be able to invite users by email address, or be invited by email address yourself.": "You can use the custom server options to sign into other servers by specifying a different Home server URL.<br/>This allows you to use Verse with an existing account on a different home server.<br/><br/>You can also set a custom identity server but you won't be able to invite users by email address, or be invited by email address yourself.",
+    "Co-ordination for Riot translators": "Co-ordination for Verse translators"
 }
