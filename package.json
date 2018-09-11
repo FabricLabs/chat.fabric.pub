@@ -2,7 +2,7 @@
   "name": "@fabric/verse",
   "productName": "Verse",
   "main": "electron_app/src/electron-main.js",
-  "version": "0.1.0-RC1",
+  "version": "0.1.0-RC2",
   "description": "virtual universe simulator",
   "author": "Fabric Labs",
   "repository": {
