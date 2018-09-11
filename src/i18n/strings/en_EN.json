@@ -1,6 +1,8 @@
 {
     "Riot is not supported on mobile web. Install the app?": "Verse works best when running on your own device.  Install the app?",
+    "Grove is not supported on mobile web. Install the app?": "Verse works best when running on your own device.  Install the app?",
     "Riot Desktop on %(platformName)s": "Verse Desktop on %(platformName)s",
+    "Grove Desktop on %(platformName)s": "Verse Desktop on %(platformName)s",
     "Unknown device": "Unknown device",
     "%(appName)s via %(browserName)s on %(osName)s": "%(appName)s via %(browserName)s on %(osName)s",
     "You need to be using HTTPS to place a screen-sharing call.": "You need to be using HTTPS to place a screen-sharing call.",

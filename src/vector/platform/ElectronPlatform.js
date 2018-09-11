@@ -46,6 +46,8 @@ function platformFriendlyName(): string {
     switch (window.process.platform) {
         case 'darwin':
             return 'macOS';
+        case 'fabric':
+            return 'Fabric';
         case 'freebsd':
             return 'FreeBSD';
         case 'openbsd':
@@ -191,7 +193,7 @@ export default class ElectronPlatform extends VectorBasePlatform {
     }
 
     getDefaultDeviceDisplayName(): string {
-        return _t('Riot Desktop on %(platformName)s', { platformName: platformFriendlyName() });
+        return _t('Grove Desktop on %(platformName)s', { platformName: platformFriendlyName() });
     }
 
     screenCaptureErrorString(): ?string {
