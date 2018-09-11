@@ -2,7 +2,7 @@
   "name": "verse",
   "productName": "Verse",
   "main": "src/electron-main.js",
-  "version": "0.1.0-RC1",
+  "version": "0.1.0-RC2",
   "description": "p2p game engine",
   "author": "Fabric Labs",
   "dependencies": {
