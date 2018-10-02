@@ -53,6 +53,10 @@ module.exports = {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract("css-raw-loader"),
             },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file?name=./res/themes/rpg/fonts/[name].[ext]'
+            }
         ],
         noParse: [
             // for cross platform compatibility use [\\\/] as the path separator
