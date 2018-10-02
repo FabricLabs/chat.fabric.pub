@@ -12,8 +12,7 @@ module.exports = {
         // are potentially loaded before babel-polyfill.
         "bundle": ["babel-polyfill", "./src/vector/index.js"],
         "indexeddb-worker": "./src/vector/indexeddb-worker.js",
-
-        "mobileguide": "./src/vector/mobile_guide/index.js",
+        "mobileguide": "./src/vector/clients/index.js",
 
         // We ship olm.js as a separate lump of javascript. This makes it get
         // loaded via a separate <script/> tag in index.html (which loads it
@@ -28,7 +27,7 @@ module.exports = {
         // "theme-light":  "./node_modules/matrix-react-sdk/res/themes/light/css/light.scss",
         // "theme-dark":   "./node_modules/matrix-react-sdk/res/themes/dark/css/dark.scss",
         // "theme-status": "./res/themes/status/css/status.scss",
-        "theme-blueshine": "./res/themes/blueshine/css/blueshine.scss",
+        "theme-rpg": "./res/themes/rpg/css/rpg.scss",
     },
     module: {
         preLoaders: [
@@ -137,8 +136,8 @@ module.exports = {
             },
         }),
         new HtmlWebpackPlugin({
-            template: './src/vector/mobile_guide/index.html',
-            filename: 'mobile_guide/index.html',
+            template: './src/vector/clients/index.html',
+            filename: 'clients/index.html',
             chunks: ['mobileguide'],
         }),
     ],

@@ -1,187 +1,56 @@
 <style type="text/css">
-
-/* we deliberately inline style here to avoid flash-of-CSS problems, and to avoid
- * voodoo where we have to set display: none by default
- */
-
-.mx_HomePage_header h1 {
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 20px;
-    margin-right: 20px;
-    color: #454545;
-}
-
-.mx_HomePage_header h2 {
-    margin-left: 0px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    color: #454545;
-}
-
-.mx_HomePage_header h1 a {
-    color: #454545;
-}
-
-.mx_HomePage h3 {
-    margin-top: 30px;
-}
-
-.mx_HomePage_header {
-    border: 1px solid #76CFA6;
-    background-color: #eaf5f0;
-    border-radius: 5px;
-    align-items: center;
-}
-
-.mx_HomePage_col {
-    display: flex;
-    flex-direction: row;
-}
-
-.mx_HomePage_toprow {
-    flex-wrap: wrap;
-}
-
-.mx_HomePage_row {
-    flex: 1 1 0;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.mx_HomePage_logo {
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 20px;
-    display: inline;
-    height: 100px;
-}
-
-.mx_HomePage_room {
-    cursor: pointer;
+  .left.floated {
     float: left;
-    text-decoration: none;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 120px;
-}
+    margin-right: 0.5em;
+  }
 
-.mx_HomePage_toprow .mx_HomePage_room {
-    width: 64px;
-}
+  .bordered.image {
+    border: 5px solid #1F677A;
+  }
 
+  .centered {
+    text-align: middle;
+  }
 
-.mx_HomePage_room .mx_HomePage_icon {
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
-}
-
-.mx_HomePage_room .mx_HomePage_name {
-    display: block;
-}
-
-.mx_HomePage_room .mx_HomePage_desc {
-    display: block;
-    font-size: 12px;
-    margin-top: 8px;
-}
-
-.mx_HomePage_comment {
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
-    min-height: 64px;
-}
-
-.mx_HomePage_container h3::after,
-.mx_HomePage_container h4::after {
-    content: ":";
-}
-
-.mx_HomePage_container {
-    display: block ! important;
-    margin: 20px;
-}
-
-.mx_HomePage_container h1,
-.mx_HomePage_container h2,
-.mx_HomePage_container h3,
-.mx_HomePage_container h4 {
-    font-weight: 600;
-}
+  .medium.image {
+    max-height: 5em;
+    max-width: 5em;
+  }
 </style>
 
-<div class="mx_HomePage_container">
-    <div class="mx_HomePage_col mx_HomePage_header">
-        <a href="https://verse.im"><img src="home/images/verse.png" class="mx_HomePage_logo"></a>
-        <div>
-            <h1>Welcome to the Verse.</h1>
-            <h2>You're one of the first to discover <em>the engine</em>.  Welcome!</h2>
-            <p><strong>Verse</strong> is a peer-to-peer game engine designed for <a href="https://www.roleplaygateway.com/">RPG</a>.  We're glad you're here!</p>
-        </div>
+<div class="ui container">
+  <div class="ui card">
+    <div class="centered image">
+      <a href="https://verse.im"><img src="images/verse.png" class="medium image" /></a>
     </div>
-
-    <div class="mx_HomePage_col mx_HomePage_toprow">
-        <div class="mx_HomePage_row">
-            <div>
-                <h3>_t("Search the room directory")</h3>
-                <a class="mx_HomePage_room" href="#/directory">
-                    <img class="mx_HomePage_icon" src="img/icons-directory.svg">
-                </a>
-                <span class="mx_HomePage_comment">
-                    Browse available rooms
-                 </span>
-            </div>
-        </div>
-        <div class="mx_HomePage_row">
-            <div>
-                <h3>Chat with @snarl</h3>
-                <a class="mx_HomePage_room" href="#/user/@snarl:fabric.pub?action=chat">
-                    <img class="mx_HomePage_icon" src="/images/snarl-headshot.png">
-                </a>
-                <span class="mx_HomePage_comment">
-                    <a href="#/user/@snarl:fabric.pub?action=chat">@snarl</a>, our friendly chatbot, will help you get started.  Chat with him now!
-                </span>
-            </div>
-        </div>
+    <div class="content">
+      <h1>Welcome to the Verse.</h1>
+      <h2>You're one of the first to discover <em>the engine</em>.  Welcome!</h2>
+      <p><strong>Verse</strong> is a peer-to-peer game engine designed for <a href="https://www.roleplaygateway.com/">RPG</a>.  We're glad you're here!</p>
     </div>
+  </div>
 
+  <div class="ui segment">
+    <h3 class="ui header">Resources</h3>
+    <a class="ui card" href="#/directory">
+      <div class="left floated image">
+        <img src="img/icons-directory.svg" />
+      </div>
+      <div class="content">
+        <h4>_t("Search the room directory")</h4>
+        <p>We've already built a network of rooms for you to explore.  Start here to learn more.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="ui segment">
     <h3>Getting Started on Verse</h3>
+    <p>Worlds on Verse are divided into <a href="/universes">Universes</a>, which are self-hosted instances of their simulations.  Universes vary widely in scale, but all share a common text-based interface &mdash; <a href="/sessions">the Shell</a>.</p>
+    <p>We're preparing for launch.  If you need help, check <a href="https://www.roleplaygateway.com/help-f11.html">the RPG Help Forum</a>.</p>
+  </div>
 
-    <div class="mx_HomePage_row">
-        <div class="mx_HomePage_room">
-            <a href="#/room/#introductions:verse.im">
-                <img class="mx_HomePage_icon" src="home/rooms/introductions.png">
-                <span class="mx_HomePage_name">Introduce Yourself</span>
-            </a>
-            <span class="mx_HomePage_desc">Tell us why you're excited about Fabric!</span>
-        </div>
-        <div class="mx_HomePage_room">
-            <a href="#/room/#welcome:verse.im">
-                <img class="mx_HomePage_icon" src="home/rooms/welcome.png">
-                <span class="mx_HomePage_name">Beginner's Chat</span>
-            </a>
-            <span class="mx_HomePage_desc">If you're confused, start here.</span>
-        </div>
-        <div class="mx_HomePage_room">
-            <a href="#/room/#general:verse.im">
-                <img class="mx_HomePage_icon" src="home/rooms/general.png">
-                <span class="mx_HomePage_name">General Chat</span>
-            </a>
-            <span class="mx_HomePage_desc">Chat with the community!</span>
-        </div>
-        <div class="mx_HomePage_room">
-            <a href="#/group/+labs:fabric.pub">
-                <img class="mx_HomePage_icon" src="home/groups/labs.png">
-                <span class="mx_HomePage_name">Fabric Labs</span>
-            </a>
-            <span class="mx_HomePage_desc">Research &amp; Development happens here.</span>
-        </div>
-    </div>
+  <div class="ui segment">
+    <h3>External Links</h3>
+    <p><a href="https://github.com/RolePlayGateway/chat.verse.im">Source Code</a> &middot; <a href="https://www.roleplaygateway.com/">RPG</a></p>
+  </div>
 </div>

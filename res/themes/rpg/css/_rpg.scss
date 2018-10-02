@@ -1,0 +1,469 @@
+@font-face {
+  font-family: 'Arvo';
+  src: url('fonts/arvo-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-family: 'Arvo', Serif;
+
+$rpg-seafoam-color: #1F677A;
+$bright-light-color: #ffffff;
+
+$primary-fg-color: #287197;
+$primary-bg-color: #18191D;
+
+$header-color: #96A2AC;
+$header-font-family: 'Arvo', Serif;
+
+$footer-color: #8D99A4;
+
+$riot-link-color: #A26988;
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $bright-light-color;
+  font-family: $header-font-family;
+  font-weight: 400 ! important;
+}
+
+$callout-color: #4360DF; // or #4957b8
+
+$form-bg-color: $callout-color;
+$form-fg-color: #ffffff;
+
+$form-field-bg-color: rgba(244, 242, 247, 0.12);
+$form-field-bg-hover-color: rgba(255, 255, 255, 0.2);
+$form-field-fg-color: #ffffff;
+
+// used for dialog box text
+$light-fg-color: #747474;
+
+// used for focusing form controls
+$focus-bg-color: #1F2833;
+
+// button UI (white-on-green in light skin)
+$accent-fg-color: #1F2833;
+$accent-color: $rpg-seafoam-color;
+$accent-hover-color: #2afff2;
+
+$selection-fg-color: $primary-bg-color;
+
+$focus-brightness: 125%;
+
+// red warning colour
+$warning-color: #B23850;
+$mention-user-pill-bg-color: #04c8b8;
+$other-user-pill-bg-color: #0DA398;
+
+$group-alert-color: #774f7e;
+
+$preview-bar-bg-color: #49555F;
+
+// left-panel style muted accent color
+$secondary-accent-color: #004F55;
+$tertiary-accent-color: #2C8985;
+
+// stop the tinter trying to change the secondary accent color
+// by overriding the key to something untintable
+// XXX: this is a bit of a hack.
+#mx_theme_secondaryAccentColor {
+    color: #c0ffee ! important;
+}
+
+#mx_theme_tertiaryAccentColor {
+    color: #c0ffee ! important;
+}
+
+// used by RoomDirectory permissions
+$plinth-bg-color: $secondary-accent-color;
+
+// used by RoomDropTarget
+$droptarget-bg-color: rgba(255,255,255,0.5);
+
+// used by AddressSelector
+$selected-color: #eaf5f0;
+
+// selected for hoverover & selected event tiles
+$event-selected-color: #1F2833;
+
+// used for the hairline dividers in RoomView
+$primary-hairline-color: #3E3F43;
+
+// used for the border of input text fields
+$input-border-color: #DFE0E1;
+
+// apart from login forms, which have stronger border
+$strong-input-border-color: #C5C6C7;
+
+// used for UserSettings EditableText
+$input-underline-color: rgba(151, 151, 151, 0.5);
+$input-fg-color: #EBECED;
+
+// context menus
+$menu-border-color: rgba(187, 187, 187, 0.5);
+$menu-bg-color: #49555F;
+
+$avatar-initial-color: #ffffff;
+$avatar-bg-color: #F8F9FA;
+
+$h3-color: #EBECED;
+
+$dialog-background-bg-color: #e9e9e9;
+$lightbox-background-bg-color: #C5C6C7;
+
+$greyed-fg-color: #888;
+
+$neutral-badge-color: #dbdbdb;
+
+$preview-widget-bar-color: #ddd;
+$preview-widget-fg-color: $greyed-fg-color;
+
+$blockquote-bar-color: #ddd;
+$blockquote-fg-color: #777;
+
+$settings-grey-fg-color: #a2a2a2;
+
+$voip-decline-color: #f48080;
+$voip-accept-color: #80f480;
+
+$rte-bg-color: #e9e9e9;
+$rte-code-bg-color: rgba(0, 0, 0, 0.04);
+$rte-room-pill-color: #aaa;
+
+// ********************
+
+$roomtile-name-color: #EBECED;
+$roomtile-selected-bg-color: #459BA1;
+$roomtile-focused-bg-color: #12686E;
+
+$roomsublist-background: rgba(0, 0, 0, 0.2);
+$roomsublist-label-fg-color: #C5C6C7;
+$roomsublist-label-bg-color: $secondary-accent-color;
+$roomsublist-chevron-color: #ffffff;
+
+$panel-divider-color: rgba(0, 0, 0, 0.2);
+
+// ********************
+
+$widget-menu-bar-bg-color: #7C8892;
+
+// ********************
+
+// event tile lifecycle
+$event-encrypting-color: #abddbc;
+$event-sending-color: #ddd;
+$event-notsent-color: #f44;
+
+// event redaction
+$event-redacted-fg-color: #e2e2e2;
+$event-redacted-border-color: #cccccc;
+
+// event timestamp
+$event-timestamp-color: #acacac;
+
+$edit-button-url: "../../img/icon_context_message.svg";
+$reply-button-url: "../../img/icon_reply_message.svg";
+$copy-button-url: "../../img/icon_copy_message.svg";
+
+// e2e
+$e2e-verified-color: #76cfa5; // N.B. *NOT* the same as $accent-color
+$e2e-unverified-color: #e8bf37;
+$e2e-warning-color: #ba6363;
+
+/*** ImageView ***/
+$lightbox-bg-color: #454545;
+$lightbox-fg-color: #ffffff;
+$lightbox-border-color: #ffffff;
+
+// unused?
+$progressbar-color: #000;
+
+html, body {
+  font-family: 'Arvo', serif;
+  color: ;
+}
+
+@define-mixin mx_DialogButton {
+    /* align images in buttons (eg spinners) */
+    vertical-align: middle;
+    border-radius: 8px;
+    border: 1px solid rgba(199, 206, 209, 0.12);
+    background-color: $accent-color;
+    font-size: 13px;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $accent-fg-color;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    padding: 14px 1.5em;
+    display: inline-block;
+    transition: background-color .2s ease;
+}
+
+@define-mixin mx_DialogButton_hover {
+    background-color: $accent-hover-color;
+}
+
+@define-mixin mx_DialogButton_small {
+    @mixin mx_DialogButton;
+    height: auto;
+    padding: 7px 1em;
+}
+
+.mx_RoomSubList_label {
+    font-size: 13px;
+    font-family: $header-font-family;
+    letter-spacing: 1px;
+}
+
+// FIXME: all these ! importants are horrid - we should instead go and define
+// variables or something.
+.mx_SearchBox_search {
+    color: #fff ! important;
+}
+
+.mx_SearchBox_search::-webkit-input-placeholder  {
+    color: rgba(255, 255, 255, 0.6) ! important;
+}
+
+.mx_SearchBox_search::-moz-placeholder  {
+    color: rgba(255, 255, 255, 0.6) ! important;
+}
+
+.mx_RoomList_emptySubListTip,
+.mx_RoomDropTarget {
+    font-size: 14px ! important;
+    border: 1.5px dashed rgba(0,0,0,0.2) ! important;
+    color: #fff ! important;
+    background-color: transparent ! important;
+    border-radius: 6px ! important;
+    margin: 8px 6px 7px !important;
+    padding: 8px ! important;
+}
+
+.mx_RoomDirectory_perm {
+    font-family: $header-font-family ! important;
+    background-color: #fff ! important;
+}
+
+.mx_RoomTile_badge,
+.mx_RoomSubList_badge {
+    height: 12px ! important;
+    padding-top: 1px ! important;
+    padding-bottom: 1px ! important;
+}
+
+.mx_RoomSubList_chevron {
+    top: 8px ! important;
+}
+
+// ***** Start of Blueshine theme Custom Thingys ******
+
+// ***** Custom Checkboxes *****
+input[type=checkbox] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0
+}
+
+input[type=checkbox]:after {
+    padding-right: 3px;
+    top: 1px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    // no spaces in between as it breaks the settings page
+    content: "[]";
+    color: #45A29E;
+    display:block;
+}
+
+input[type=checkbox]:checked:after {
+    content: "[X]";
+    color: #45A29E;
+}
+
+// ***** Custom Radio Buttons *****
+input[type=radio] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0
+}
+input[type=radio]:after {
+    padding-right: 3px;
+    top: 1px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    // no spaces in between as it breaks the settings page
+    content: "()";
+    color: #45A29E;
+    display:block;
+}
+input[type=radio]:checked:after {
+    content: "(X)";
+    color: #45A29E;
+}
+
+// make Dialogs look roundish
+.mx_Dialog {
+    border-radius: 10px;
+}
+
+// ***** Custom Login *****
+
+.mx_Login_box {
+    background-color: #49555F;
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.mx_Login_field {
+    background-color: $primary-bg-color !important;
+}
+
+.mx_Dropdown .mx_Login_language {
+    background-color: $primary-bg-color !important;
+}
+
+.mx_Dropdown .mx_Login_type_dropdown {
+    background-color: $primary-bg-color !important;
+}
+
+.mx_RightPanel {
+    background-color: $event-selected-color;
+    padding-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.mx_RightPanel_headerButtonGroup {
+    background-color: $event-selected-color !important;
+    padding-left: 5px;
+}
+
+.mx_LeftPanel {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+// ********************
+
+// ***** CSS Fixes needed for the blueshine theme as not all variables fit nicely *****
+.mx_UserSettings_ignoredUsersSection ul li {
+    margin-bottom: 1em;
+}
+
+.mx_EntityTile_offline_neveractive .mx_EntityTile_avatar,
+.mx_EntityTile_offline_neveractive .mx_EntityTile_name,
+.mx_EntityTile_offline_neveractive .mx_EntityTile_name_hover
+{
+    opacity: 0.45 !important;
+}
+
+.mx_EntityTile_unknown .mx_EntityTile_avatar,
+.mx_EntityTile_unknown .mx_EntityTile_name,
+.mx_EntityTile_unknown .mx_EntityTile_name_hover
+{
+    opacity: 0.45 !important;
+}
+
+.mx_TopUnreadMessagesBar_scrollUp {
+    color: #FCCD04;
+}
+
+.mx_Dialog button:disabled, .mx_Dialog input[type="submit"]:disabled {
+    background-color: #00968B !important;
+}
+
+.mx_Autocomplete_Completion.selected {
+    background: $menu-bg-color !important;
+}
+
+.mx_Dialog button:hover, .mx_Dialog input[type="submit"]:hover {
+    color: #1F2833;
+}
+
+.mx_AppPermissionWarning {
+    background-color: #49555F !important;
+}
+
+.mx_MessageComposer_formatbar_wrapper {
+    background-color: #A2AEB8 !important;
+}
+
+/*
+// Commented as webpack/scss or something else removes the !Important flag for some reason
+.mx_AppPermissionButton {
+    background-color: $accent-color !important;
+}
+
+.mx_AppPermissionButton:hover {
+    background-color: $accent-hover-color !important;
+}*/
+
+.mx_RoomDirectory_perm {
+    color: #4056A1 !important;
+}
+
+.mx_RoomSubList_moreBadge {
+    background-color: $roomtile-selected-bg-color !important;
+}
+
+.mx_NetworkDropdown_networkoption img {
+    border-radius: 3px;
+    padding: 1px;
+    background-color: $avatar-bg-color;
+}
+
+.mx_MemberInfo_profileField {
+    background-color: #1F2833 !important;
+}
+
+// markdown overrides:
+.mx_EventTile_content .markdown-body pre:hover {
+    border-color: #070707 !important; // inverted due to rules below
+}
+.mx_EventTile_content .markdown-body {
+    code, pre {
+        background-color: #D2D3D4 !important;
+    }
+
+    code a {
+        color: #1AB0A5;
+    }
+
+    table {
+        tr {
+            background-color: #000000;
+        }
+
+        tr:nth-child(2n) {
+            background-color: #080808;
+        }
+    }
+}
+
+// ********************

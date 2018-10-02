@@ -52,6 +52,7 @@ const COPY_LIST = [
     ["res/home.html", "webapp"],
     ["res/home-status.html", "webapp"],
     ["res/home/**", "webapp/home"],
+    ["res/themes/rpg/fonts/**", "webapp/fonts"],
     ["res/grove-icons/**", "webapp/grove-icons"],
     ["res/vector-icons/**", "webapp/vector-icons"],
     ["res/verse-icons/**", "webapp/verse-icons"],
