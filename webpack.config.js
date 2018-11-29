@@ -22,6 +22,7 @@ module.exports = {
         // point, so that it doesn't block the pageload, but that is a separate
         // problem)
         "olm": "./src/vector/olm-loader.js",
+        "mobileguide": "./res/releases/index.js",
 
         // CSS themes
         // "theme-light":  "./node_modules/matrix-react-sdk/res/themes/light/css/light.scss",
@@ -140,8 +141,8 @@ module.exports = {
             },
         }),
         new HtmlWebpackPlugin({
-            template: './src/vector/clients/index.html',
-            filename: 'clients/index.html',
+            template: './res/releases/index.html',
+            filename: 'releases/index.html',
             chunks: ['mobileguide'],
         }),
     ],
