@@ -2,7 +2,7 @@
   "brand": "Verse",
   "default_theme": "rpg",
   "default_hs_url": "https://verse.im",
-  "default_is_url": "https://vector.im",
+  "default_is_url": "https://verse.im",
   "integrations_ui_url": "https://scalar.verse.im",
   "integrations_rest_url": "https://scalar.verse.im",
   "bug_report_endpoint_url": "https://chat.verse.im/bugs",
