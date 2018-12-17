@@ -258,7 +258,7 @@ async function loadApp() {
         const isAndroid = /Android/.test(navigator.userAgent);
         if (isIos || isAndroid) {
             if (!document.cookie.split(';').some((c) => c.startsWith('mobile_redirect_to_guide'))) {
-                window.location = "mobile_guide/";
+                window.location = "releases/";
                 return;
             }
         }
